@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration xmlns="https://github.com/update4j/update4j">
+    <properties>
+        <!-- Propriedades que podem ser acessadas no seu aplicativo -->
+        <property name="app.name" value="Minha Aplicação"/>
+        <property name="app.version" value="1.0.0"/>
+    </properties>
+
+    <base uri="https://drive.google.com/file/d/11Ry3YUJbZt0m4WAGKQBqTsUNeEJO8Whc" />
+    <base uri="http://mirror.example.com/downloads/" os="linux" />
+
+    <files>
+        <!-- Arquivo principal do seu aplicativo -->
+        <file path="TesteMySqlApplication.java"  />
+        
+        <!-- Bibliotecas dependentes -->
+        <file path="libs/library1.jar" size="234567" checksum="b2c3d4e5f6g7..." />
+        <file path="libs/library2.jar" size="345678" checksum="c3d4e5f6g7h8..." />
+        
+        <!-- Arquivos de recursos (opcional) -->
+        <file path="resources\application.properties" />
+        
+      
+    </files>
+
+    <launcher>
+       
+    </launcher>
+</configuration>
